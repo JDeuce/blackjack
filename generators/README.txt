@@ -1,0 +1,1 @@
+These little generators run with python and PIL, and output a simple bitmask that can be pasted into a C array
