@@ -1,7 +1,8 @@
 CC=avr-gcc
 CPU=atxmega128a1
 CFLAGS=-c -g -O3 -Wall -mmcu=$(CPU)
-LDFLAGS=--cref -mmcu=$(CPU)
+#LDFLAGS=--cref -mmcu=$(CPU)
+LDFLAGS= -mmcu=$(CPU)
 
 SRC = src
 BUILD = build
