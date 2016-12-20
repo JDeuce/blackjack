@@ -29,4 +29,6 @@ clean:
 	rm -f $(SRC)/*~
 	rm -rf $(BUILD)/*
 	rm -f *.hex
-	
+
+flash: $(EXE).hex
+	avrdude -c avrisp2 -p x128a1 -U flash:w:$(EXE).hex
